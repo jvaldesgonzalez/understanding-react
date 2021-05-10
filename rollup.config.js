@@ -14,8 +14,8 @@ export default {
   },
   plugins: [
     resolve(),
-    commonjs(),
     babel({ babelHelpers: "bundled", presets: ["@babel/preset-env"] }),
+    commonjs(),
     replace({
       preventAssignment: true,
       "process.env.NODE_ENV": JSON.stringify("development"),
