@@ -3,7 +3,7 @@
     [
       "@babel/plugin-transform-react-jsx",
       {
-        "pragma": "Ria.createElement",
+        "pragma": "Jex.createElement",
         "throwIfNamespace": false
       }
     ]

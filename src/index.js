@@ -1,4 +1,4 @@
-import React from "./react";
+import Jex from "./jex";
 
 console.log("hello rollup");
 

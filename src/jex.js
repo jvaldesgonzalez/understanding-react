@@ -2,8 +2,8 @@ const createElement = (type, props = {}, ...children) => {
   console.log(type, props, children);
 };
 
-const React = {
+const Jex = {
   createElement,
 };
 
-export default React;
+export default Jex;
