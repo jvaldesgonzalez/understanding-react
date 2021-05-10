@@ -6,7 +6,7 @@ import babel from "@rollup/plugin-babel";
 import replace from "@rollup/plugin-replace";
 
 export default {
-  input: "src/main.js",
+  input: "src/index.js",
   output: {
     file: "public/bundle.js",
     format: "iife",
@@ -17,6 +17,7 @@ export default {
     commonjs(),
     babel({ babelHelpers: "bundled", presets: ["@babel/preset-env"] }),
     replace({
+      preventAssignment: true,
       "process.env.NODE_ENV": JSON.stringify("development"),
     }),
     serve({
