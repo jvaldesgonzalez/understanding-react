@@ -13,8 +13,8 @@ export default {
     sourcemap: true,
   },
   plugins: [
-    resolve(),
     babel({ babelHelpers: "bundled", presets: ["@babel/preset-env"] }),
+    resolve(),
     commonjs(),
     replace({
       preventAssignment: true,
